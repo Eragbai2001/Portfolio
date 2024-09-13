@@ -33,7 +33,7 @@ export default function Header() {
 
   return (
     <div
-      className="flex items-center justify-between py-8 bg-black text-white px-16 h"
+      className="flex items-center justify-between max-sm:py-2 py-5 bg-black text-white max-sm:px-7 px-14 "
       style={{ fontFamily: "Kranky" }}>
       <h1 className="text-4xl mt-5">Josh</h1>
       <nav>

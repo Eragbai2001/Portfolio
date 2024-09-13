@@ -23,6 +23,15 @@ export default {
         "max-sm": { max: "639px" }, // This applies for screens smaller than 640px
         "max-xs": { max: "385px" }, // This applies for screens smaller than 640px
       },
+      keyframes: {
+        upDown: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+      },
+      animation: {
+        upDown: "upDown 1s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
