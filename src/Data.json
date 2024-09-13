@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Sunset Matches",
+      "description": "A project about matching sunsets to user moods.",
+      "image": "Images/image 2.png"
+    },
+    {
+      "id": 2,
+      "name": "Foodash",
+      "description": "An app designed to help users reduce their carbon footprint.",
+      "image": "Images/image 3.png"
+    },
+    {
+      "id": 3,
+      "name": "MediAssis",
+      "description": "A weather tracking app for real-time updates.",
+      "image": "Images/image 4.png"
+    },
+    {
+      "id": 4,
+      "name": "Jumia Clone",
+      "description": "A weather tracking app for real-time updates.",
+      "image": "Images/image 5.png"
+    }
+  ]
+  

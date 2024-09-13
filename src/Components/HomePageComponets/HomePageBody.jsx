@@ -38,7 +38,7 @@ const HomePageBody = () => {
             </div>
             <div className="rounded-full border border-primary p-4 mt-4 w-10 h-10 flex items-center justify-center">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/joshiri360"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-white">
@@ -47,7 +47,7 @@ const HomePageBody = () => {
             </div>
             <div className="rounded-full border border-primary p-4 mt-4 w-10 h-10 flex items-center justify-center">
               <a
-                href="https://github.com/yourusername"
+                href="https://x.com/_devjosh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-white">

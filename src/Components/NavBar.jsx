@@ -35,7 +35,7 @@ export default function Header() {
     <div
       className="flex items-center justify-between max-sm:py-2 py-5 bg-black text-white max-sm:px-7 px-14 "
       style={{ fontFamily: "Kranky" }}>
-      <h1 className="text-4xl mt-5">Josh</h1>
+      <h1 className="text-4xl mt-5 font-poppins">Josh</h1>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
@@ -70,7 +70,7 @@ export default function Header() {
                 <NavLink to="/about">about</NavLink>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <NavLink to="/portfolio">Project</NavLink>
+                <NavLink to="/project">Project</NavLink>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <NavLink to="/contact">work with me</NavLink>
@@ -84,7 +84,7 @@ export default function Header() {
             <NavLink to="/about">about</NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio">Project</NavLink>
+            <NavLink to="/project">Project</NavLink>
           </li>
           <li>
             <NavLink to="/contact">work with me</NavLink>
