@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Kranky";
+    src: local("Kranky-Regular") url('./assets/Fonts/Kranky-Regular.ttf')
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins-ExtraBold") url('./assets/Fonts/Poppins-ExtraBold.ttf')
+}
