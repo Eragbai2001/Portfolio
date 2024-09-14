@@ -1,35 +1,13 @@
-/* import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "../assets/Fonts/Kranky-Regular.ttf";
-
-const NavBar = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  return (
-    <div className=" bg-black h-20 ">
-      <div
-        className="px-20 text-white flex justify-between item-center "
-        style={{ fontFamily: "Kranky" }}>
-          
-        <h1 className="text-4xl mt-5">Josh</h1>
-        <div className="mt-5 flex gap-10">
-          <NavLink to="/">about</NavLink>
-          <NavLink to="/Project">Project</NavLink>
-          <NavLink to="/">work with me</NavLink>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default NavBar;
- */
-
 import { useState } from "react"; // import state
 import { NavLink } from "react-router-dom";
 import "../assets/Fonts/Kranky-Regular.ttf";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+
+  const handleNavLinkClick = () => {
+    setIsNavOpen(false); // close the menu when a NavLink is clicked
+  };
 
   return (
     <div
@@ -48,7 +26,6 @@ export default function Header() {
           </div>
 
           <div className={`${isNavOpen ? "showMenuNav" : "hideMenuNav"} `}>
-            {" "}
             <div
               className="CROSS-ICON absolute top-0 right-0 px-8 py-8 "
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
@@ -67,13 +44,13 @@ export default function Header() {
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <NavLink to="/about">about</NavLink>
+                <NavLink to="/" onClick={handleNavLinkClick}>about</NavLink>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <NavLink to="/project">Project</NavLink>
+                <NavLink to="/project" onClick={handleNavLinkClick}>Project</NavLink>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <NavLink to="/contact">work with me</NavLink>
+                <NavLink to="/contact" onClick={handleNavLinkClick}>work with me</NavLink>
               </li>
             </ul>
           </div>
@@ -81,7 +58,7 @@ export default function Header() {
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li>
-            <NavLink to="/about">about</NavLink>
+            <NavLink to="/">about</NavLink>
           </li>
           <li>
             <NavLink to="/project">Project</NavLink>

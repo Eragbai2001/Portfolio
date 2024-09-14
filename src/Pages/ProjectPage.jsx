@@ -10,14 +10,15 @@ const ProjectPage = () => {
   useEffect(() => {
     setItems(data);
   }, []);
+
   return (
-    <div className="flex justify-center items-center gap-7">
+    <div className="grid grid-cols-4 max-lg:grid-cols-1 justify-items-center w-3/4 mx-auto ">
       {items.map((item) => (
         <Link
           key={item.id}
           to={`/project/${item.id}`}
-          className="flex justify-center flex-col items-center font-poppins ">
-          <CardSpotlight className="mt-44 w-[240px] h-[360px] border-4 border-primary bg-black rounded-2xl">
+          className="font-poppins outline-none focus:outline-none">
+          <CardSpotlight className="mt-44 max-lg:mt-16 w-[240px] h-[360px] border-4 border-primary bg-black rounded-2xl">
             <JoshProject project={item} />
           </CardSpotlight>
         </Link>

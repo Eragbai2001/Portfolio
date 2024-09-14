@@ -9,8 +9,8 @@ import { Twitter } from "lucide-react";
 
 const HomePageBody = () => {
   return (
-    <div>
-      <div className="bg-black  flex justify-center flex-col items-center font-poppins ">
+    <div className="">
+      <div className="bg-black  flex justify-center flex-col items-center font-poppins  ">
         <div className="rounded-full border-4 border-primary w-[172px] h-[172px] overflow-hidden mt-10 flex items-center justify-center">
           <img src={Josh} className="w-full h-full object-cover" />
         </div>

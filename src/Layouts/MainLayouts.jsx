@@ -4,9 +4,11 @@ import NavBar from "../Components/NavBar";
 
 const MainLayouts = () => {
   return (
-    <div className="h-screen bg-black">
-      <NavBar /> 
-      <Outlet />
+    <div className="min-h-screen flex flex-col bg-black">
+      <NavBar />
+      <div className="flex-grow">
+        <Outlet />
+      </div>
     </div>
   );
 };

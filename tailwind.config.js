@@ -21,7 +21,8 @@ export default {
       },
       screens: {
         "max-sm": { max: "639px" }, // This applies for screens smaller than 640px
-        "max-xs": { max: "385px" }, // This applies for screens smaller than 640px
+        "max-xs": { max: "385px" }, // This applies for screens smaller than 385px
+        "max-lg": { max: "1286px" }, // This applies for screens smaller than 1286px
       },
       keyframes: {
         upDown: {
