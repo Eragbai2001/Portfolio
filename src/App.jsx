@@ -1,27 +1,23 @@
-import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-} from "react-router-dom";
 import React from "react";
-import MainLayout from "./Layouts/MainLayouts";
-import HomePage from "./Pages/Homepage";
-import ProjectPage from "./Pages/ProjectPage";
-import CardDetails from "./Pages/CardDetail";
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<MainLayout />}>
-      <Route index element={<HomePage />} />
-      <Route path="/project" element={<ProjectPage />} />
-      <Route path="/project/:id" element={<CardDetails />} />
-    </Route>
-  )
-);
+import Header from "./Components/NavBar"; // Your navbar component
+import HomePageBody from "./Components/HomePageComponets/HomePageBody"; // Homepage content
+import Project from "./Components/ProjectPagecomponents/Project"; // Your projects section
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <div className="  flex flex-col bg-black">
+      <Header /> {/* Navbar with links to sections */}
+      {/* Main content */}
+      <main className="flex-grow">
+        <section id="home">
+          <HomePageBody /> {/* Your main homepage content */}
+        </section>
+        <section id="projects">
+          <Project /> {/* Projects section */}
+        </section>
+      </main>
+    </div>
+  );
 };
 
 export default App;

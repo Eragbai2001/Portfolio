@@ -12,7 +12,7 @@ const ProjectPage = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 max-lg:grid-cols-1 justify-items-center w-3/4 mx-auto ">
+    <div className="grid grid-cols-4 max-lg:grid-cols-1 justify-items-center w-3/4 mx-auto " id="projects">
       {items.map((item) => (
         <Link
           key={item.id}

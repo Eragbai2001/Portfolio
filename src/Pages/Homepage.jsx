@@ -3,9 +3,9 @@ import Body from "../Components/HomePageComponets/HomePageBody";
 
 const Homepage = () => {
   return (
-    <>
+    <div id="about">
       <Body />
-    </>
+    </div>
   );
 };
 

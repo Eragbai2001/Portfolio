@@ -1,17 +1,16 @@
-import { useState } from "react"; // import state
-import { NavLink } from "react-router-dom";
-import "../assets/Fonts/Kranky-Regular.ttf";
+import React, { useState } from "react";
+import { Link as ScrollLink } from "react-scroll"; // Add react-scroll for smooth scrolling
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   const handleNavLinkClick = () => {
-    setIsNavOpen(false); // close the menu when a NavLink is clicked
+    setIsNavOpen(false); // close the menu when an anchor link is clicked
   };
 
   return (
     <div
-      className="flex items-center justify-between max-sm:py-2 py-5 bg-black text-white max-sm:px-7 px-14 "
+      className="sticky top-0 z-50 flex items-center justify-between max-sm:py-2 py-5 bg-black text-white max-sm:px-7 px-14"
       style={{ fontFamily: "Kranky" }}>
       <h1 className="text-4xl mt-5 font-poppins">Josh</h1>
       <nav>
@@ -27,8 +26,8 @@ export default function Header() {
 
           <div className={`${isNavOpen ? "showMenuNav" : "hideMenuNav"} `}>
             <div
-              className="CROSS-ICON absolute top-0 right-0 px-8 py-8 "
-              onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
+              className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
+              onClick={() => setIsNavOpen(false)} // close the menu
             >
               <svg
                 className="h-8 w-8 text-white"
@@ -44,13 +43,34 @@ export default function Header() {
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <NavLink to="/" onClick={handleNavLinkClick}>about</NavLink>
+                <ScrollLink
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleNavLinkClick}
+                  className="cursor-pointer">
+                  Home
+                </ScrollLink>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <NavLink to="/project" onClick={handleNavLinkClick}>Project</NavLink>
+                <ScrollLink
+                  to="projects"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleNavLinkClick}
+                  className="cursor-pointer">
+                  Projects
+                </ScrollLink>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <NavLink to="/contact" onClick={handleNavLinkClick}>work with me</NavLink>
+                <ScrollLink
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleNavLinkClick}
+                  className="cursor-pointer">
+                  Contact
+                </ScrollLink>
               </li>
             </ul>
           </div>
@@ -58,16 +78,35 @@ export default function Header() {
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li>
-            <NavLink to="/">about</NavLink>
+            <ScrollLink
+              to="home"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer">
+              Home
+            </ScrollLink>
           </li>
           <li>
-            <NavLink to="/project">Project</NavLink>
+            <ScrollLink
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer">
+              Projects
+            </ScrollLink>
           </li>
           <li>
-            <NavLink to="/contact">work with me</NavLink>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer">
+              Contact
+            </ScrollLink>
           </li>
         </ul>
       </nav>
+
       <style>{`
       .hideMenuNav {
         display: none;
