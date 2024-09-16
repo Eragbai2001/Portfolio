@@ -64,12 +64,12 @@ export default function Header() {
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <ScrollLink
-                  to="contact"
+                  to="work with me"
                   smooth={true}
                   duration={500}
                   onClick={handleNavLinkClick}
                   className="cursor-pointer">
-                  Contact
+                  work with me
                 </ScrollLink>
               </li>
             </ul>
@@ -97,11 +97,11 @@ export default function Header() {
           </li>
           <li>
             <ScrollLink
-              to="contact"
+              to="work with me"
               smooth={true}
               duration={500}
               className="cursor-pointer">
-              Contact
+              work with me
             </ScrollLink>
           </li>
         </ul>

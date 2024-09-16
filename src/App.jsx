@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Components/NavBar"; // Your navbar component
 import HomePageBody from "./Components/HomePageComponets/HomePageBody"; // Homepage content
 import Project from "./Components/ProjectPagecomponents/Project"; // Your projects section
+import Workwithme from "./Components/HomePageComponets/Workwithme";
 import CardDetails from "./Pages/CardDetail"; // Your card details component
 
 const App = () => {
@@ -24,6 +25,9 @@ const App = () => {
                   </section>
                   <section id="projects">
                     <Project /> {/* Projects section */}
+                  </section>
+                  <section id="work with me ">
+                    <Workwithme /> {/* Projects section */}
                   </section>
                 </>
               }
