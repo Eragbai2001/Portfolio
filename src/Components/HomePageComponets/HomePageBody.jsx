@@ -6,13 +6,14 @@ import Footer from "./HomePageLogo";
 import { Linkedin } from "lucide-react";
 import { Github } from "lucide-react";
 import { Twitter } from "lucide-react";
+import { BackgroundBeams } from "../ui/Background-beam";
 
 const HomePageBody = () => {
   return (
     <div className=" ">
       <div className=" flex justify-center flex-col items-center font-poppins  ">
         <div className="rounded-full border-4 border-primary w-[172px] h-[172px] overflow-hidden mt-[6.7rem] flex items-center justify-center">
-          <img src={Josh} className="w-full h-full object-cover" />
+          <img src={Josh} className="w-full h-full object-cover z-50" />
         </div>
         <div className="flex flex-col items-center mt-9">
           <h1 className="text-white text-[35px] mt-3 font-bold  ">
@@ -56,6 +57,7 @@ const HomePageBody = () => {
             </div>
           </div>
         </div>
+        <BackgroundBeams />
       </div>
       <Footer />
     </div>
