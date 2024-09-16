@@ -11,7 +11,7 @@ import CardDetails from "./Pages/CardDetail"; // Your card details component
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col bg-black h-screen ">
+      <div className="flex flex-col bg-black  ">
         <Header /> {/* Navbar with links to sections */}
         {/* Main content */}
         <main className="flex-grow">

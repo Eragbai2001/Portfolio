@@ -14,6 +14,9 @@ module.exports = {
         "meteor-effect": "meteor 5s linear infinite",
         upDown: "upDown 1s ease-in-out infinite",
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite", // Adjust duration as needed
+      },
       keyframes: {
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
