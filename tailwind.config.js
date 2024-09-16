@@ -48,6 +48,7 @@ module.exports = {
         "max-sm": { max: "639px" }, // Applies for screens smaller than 640px
         "max-xs": { max: "385px" }, // Applies for screens smaller than 385px
         "max-lg": { max: "1286px" }, // Applies for screens smaller than 1286px
+        "max-xl": { max: "1024px" }, // Applies for screens smaller than 1286px
       },
     },
   },

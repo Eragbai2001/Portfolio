@@ -21,8 +21,8 @@ const CardDetails = () => {
   }
 
   return (
-    <div className="grid grid-cols-2 px-14 items-center mt-10">
-      <div className="item-details text-white">
+    <div className="grid grid-cols-2 max-xl:grid-cols-1 px-14 items-center mt-10  max-xl:min-h-screen bg-black">
+      <div className="item-details text-white ">
         <div className="rounded-full border border-primary p-4 mt-4 w-10 h-10 flex items-center justify-center">
           <Link to="/" className="text-white hover:text-white">
             <ChevronLeft className="text-primary" />
@@ -31,7 +31,7 @@ const CardDetails = () => {
         <h2 className="text-primary text-3xl font-bold font-poppins mt-7">
           {item.name}
         </h2>
-        <div className="w-[35rem] font-poppins leading-tight mt-2 ">
+        <div className="w-[35rem] font-poppins leading-tight mt-2 max-sm:w-[22rem] ">
           <p>{item.description}</p>
         </div>
 
@@ -58,7 +58,7 @@ const CardDetails = () => {
                 {feature}
               </p>
             ))}
-            <div className="flex gap-5 mt-7">
+            <div className="flex gap-5 mt-7 ">
               <div className="rounded-full border border-primary p-4 mt-4 w-10 h-10 flex items-center justify-center">
                 <a
                   href={item.Links.Mobile}
@@ -91,7 +91,7 @@ const CardDetails = () => {
         </div>
       </div>
 
-      <div className="image-container w-[25rem] ml-auto h-[560px] border-4 border-primary rounded-2xl bg-gradient-to-b from-black via-black/60 to-[#EC4899]">
+      <div className="max-xl:mt-10 max-lg:w-[22rem] w-[25rem] lg:ml-auto h-[560px] border-4 border-primary rounded-2xl bg-gradient-to-b from-black via-black/60 to-[#EC4899]">
         <img
           src={`/${item.Preview}`} // Ensure the path is correct
           alt={item.name}
