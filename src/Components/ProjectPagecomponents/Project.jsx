@@ -15,14 +15,14 @@ const Project = () => {
 
   return (
     <div
-      className="grid grid-cols-4 max-lg:grid-cols-1 justify-items-center w-3/4 mx-auto min-h-screen bg-black justify-center"
+      className="grid grid-cols-4 max-lg:grid-cols-1 justify-items-center mx-auto bg-black justify-center px-40"
       id="projects">
       {items.map((item) => (
         <Link
           key={item.id}
           to={`/card/${item.id}`} // Use Link for navigation
-          className="font-poppins outline-none focus:outline-none  ">
-          <div className="mt-44 max-lg:mt-16 w-[240px] h-[360px] border-4 border-primary bg-black rounded-2xl ">
+          className="font-poppins outline-none focus:outline-none ">
+          <div className="mt-44 max-lg:mt-16 w-[240px] h-[360px] border-4 border-primary bg-black rounded-2xl  ">
             <CardBody className="mt-12 flex flex-col items-center relative  overflow-hidden ">
               <img
                 src={Image}
@@ -37,7 +37,6 @@ const Project = () => {
               <div className="pt-10 text-white font-bold font-poppins">
                 {item.name} {/* Display item name */}
               </div>
-              <Meteors number={40} /> {/* Add Meteors component */}
             </CardBody>
           </div>
         </Link>

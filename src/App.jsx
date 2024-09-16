@@ -10,21 +10,24 @@ import CardDetails from "./Pages/CardDetail"; // Your card details component
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col bg-black">
+      <div className="flex flex-col bg-black h-screen ">
         <Header /> {/* Navbar with links to sections */}
         {/* Main content */}
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={
-              <>
-                <section id="home">
-                  <HomePageBody /> {/* Your main homepage content */}
-                </section>
-                <section id="projects">
-                  <Project /> {/* Projects section */}
-                </section>
-              </>
-            } />
+            <Route
+              path="/"
+              element={
+                <>
+                  <section id="home">
+                    <HomePageBody /> {/* Your main homepage content */}
+                  </section>
+                  <section id="projects">
+                    <Project /> {/* Projects section */}
+                  </section>
+                </>
+              }
+            />
             <Route path="/card/:id" element={<CardDetails />} />
           </Routes>
         </main>
