@@ -18,7 +18,7 @@ const CardDetails = () => {
   }
 
   return (
-    <div className="grid grid-cols-2 max-xl:grid-cols-1 px-6 lg:px-14 items-center mt-10 max-xl:min-h-screen bg-black">
+    <div className="grid grid-cols-2 max-xl:grid-cols-1 px-6 lg:px-14 items-center mt-10 max-xl:min-h-screen bg-black ">
       {/* Left section: Details */}
       <div className="item-details text-white">
         {/* Back button */}
@@ -111,4 +111,3 @@ const CardDetails = () => {
 };
 
 export default CardDetails;
-  
