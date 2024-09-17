@@ -2,14 +2,14 @@
   {
     "id": 1,
     "name": "Sunset Matches",
-    "description": "EcoTrack is a mobile and web application designed to help users monitor and reduce their carbon footprint. It provides personalized recommendations, tracks daily activities, and offers community challenges to encourage sustainable living.",
+    "description": "Sunset Matches is a dating app designed to bring meaningful connections through personalized matchmaking. The app focuses on fostering genuine relationships by matching users based on shared interests and values, ensuring high-quality interactions.",
     "image": "Images/image 2.png",
-    "Preview": "Images/Foodash.webp",
+    "Preview": "Images/pexels-thai-hu-nh-2335830-3998365.jpg",
     "KeyFeatures": [
-    "Personal carbon footprint calculator",
-    "Daily activity tracking and insights",
-    "Personalized eco-friendly recommendations",
-    "Community challenges and leaderboards"
+      "Personalized matchmaking based on interests and values",
+      "Private and secure messaging system",
+      "Curated profiles to ensure high-quality matches",
+      "In-app events and activities to engage users"
   ], 
   "Skills": [
     "React Native, Next.js, Node.js, Express, MongoDB, GraphQL, AWS"
@@ -23,21 +23,21 @@
   {
     "id": 2,
     "name": "Foodash",
-    "description": "EcoTrack is a mobile and web application designed to help users monitor and reduce their carbon footprint. It provides personalized recommendations, tracks daily activities, and offers community challenges to encourage sustainable living.",
+    "description": "Foodash is a food delivery application that provides users with access to local restaurants and fast food services. It features a seamless ordering process, real-time delivery tracking, and personalized restaurant recommendations.",
     "image": "Images/image 3.png",
     "Preview": "Images/Foodash.webp",
     "KeyFeatures": [
-    "Personal carbon footprint calculator",
-    "Daily activity tracking and insights",
-    "Personalized eco-friendly recommendations",
-    "Community challenges and leaderboards"
+    "Real-time delivery tracking",
+    "Personalized restaurant and meal recommendations",
+    "Multiple payment methods",
+    "User-friendly interface for quick food ordering"
   ], 
   "Skills": [
-    "React Native, Next.js, Node.js, Express, MongoDB, GraphQL, AWS"
+     "React Native, Next.js, Node.js, Express, MongoDB, GraphQL, AWS"
   ],
   "Links": {
-      "Mobile": "https://www.linkedin.com/in/joshua-aideloje-6877a5193/recent-activity/all/",
-      "Web": "https://github.com/joshiri360",
+      "Mobile": "https://play.google.com/store/apps/details?id=com.foodashapp.user&hl=en",
+      "Web": "https://play.google.com/store/apps/details?id=com.foodashapp.user&hl=en",
       "Github": "https://x.com/_devjosh"
     }
   },

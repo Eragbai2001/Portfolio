@@ -14,9 +14,7 @@ module.exports = {
         "meteor-effect": "meteor 5s linear infinite",
         upDown: "upDown 1s ease-in-out infinite",
       },
-      animation: {
-        "spin-slow": "spin 3s linear infinite", // Adjust duration as needed
-      },
+
       keyframes: {
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
@@ -50,7 +48,7 @@ module.exports = {
       screens: {
         "max-sm": { max: "639px" }, // Applies for screens smaller than 640px
         "max-xs": { max: "385px" }, // Applies for screens smaller than 385px
-        "max-lg": { max: "1286px" }, // Applies for screens smaller than 1286px
+        "max-lg": { max: "1279px" }, // Applies for screens smaller than 1286px
         "max-xl": { max: "1024px" }, // Applies for screens smaller than 1286px
       },
     },
