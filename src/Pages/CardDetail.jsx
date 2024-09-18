@@ -4,6 +4,7 @@ import data from "../Data.json"; // Import JSON file directly
 import { ChevronLeft, Smartphone, Globe, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import { CardBody, CardContainer, CardItem } from "../Components/ui/3d-card";
+import { PinContainer } from "../Components/ui/3d-pin";
 
 const CardDetails = () => {
   const { id } = useParams();
@@ -20,10 +21,10 @@ const CardDetails = () => {
 
   return (
     <div
-      className="grid grid-cols-2 max-xl:grid-cols-1 px-6 lg:px-28
-     items-center mt-10 max-xl:min-h-screen bg-black ">
+      className="relative grid grid-cols-2 max-xl:grid-cols-1 px-9 lg:px-28
+    items-center mt-10 max-xl:min-h-screen ">
       {/* Left section: Details */}
-      <div className="item-details text-white">
+      <div className="item-details text-white ">
         {/* Back button */}
         <div className="rounded-full border border-primary p-3 md:p-4 mt-4 w-10 h-10 flex items-center justify-center">
           <Link to="/" className="text-white hover:text-white">
@@ -37,7 +38,7 @@ const CardDetails = () => {
         </h2>
 
         {/* Description */}
-        <div className="w-[90%] xl:w-[35rem] max-xl:[32rem] font-poppins leading-tight mt-4 text-sm lg:text-xl max-sm:w-[22rem]">
+        <div className="w-[90%] xl:w-[39rem] max-xl:[32rem] font-poppins leading-tight mt-4 text-base lg:text-xl max-sm:w-[22rem]">
           <p>{item.description}</p>
         </div>
 
@@ -60,7 +61,7 @@ const CardDetails = () => {
           <h3 className="text-primary text-2xl font-bold mb-2 font-poppins">
             Tech Stack
           </h3>
-          <div className="font-poppins w-[30rem]">
+          <div className="font-poppins w-[30rem] max-xl:w-[20rem]">
             {item.Skills.map((feature, index) => (
               <p key={index} className=" lg:w-96 text-lg">
                 {feature}
@@ -80,7 +81,7 @@ const CardDetails = () => {
               </div>
               <div className="rounded-full border border-primary p-3 md:p-4 w-10 h-10 flex items-center justify-center">
                 <a
-                  href={item.Links.web}
+                  href={item.Links.Web}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-white">
@@ -102,15 +103,18 @@ const CardDetails = () => {
       </div>
 
       {/* Right section: Image */}
-      <CardContainer className="max-xl:mt-10 w-[22rem] xl:w-[30rem] lg:ml-auto h-[560px] border-4 border-primary rounded-2xl bg-gradient-to-b from-black via-black/60 to-[#EC4899] max-lg:w-[25rem] flex items-center justify-center relative overflow-hidden shadow-lg">
-        <CardItem>
+      <div className=" max-sm:ml-8 w-[17rem] xl:w-[30rem] lg:ml-auto h-[560px]  rounded-2xl   flex items-center justify-center relative max-xl:min-h-[40rem]   ">
+        <PinContainer
+          className="bg-gradient-to-b from-black via-black/60 to-[#EC4899] border-2 border-primary h-[560px] w-[22rem] max-lg:w-[25rem] xl:w-[30rem] rounded-2xl "
+          title={item.Links.link}
+          href={item.Links.Web}>
           <img
             src={`/${item.Preview}`}
             alt={item.name}
-            className="w-full h-auto object-cover rounded-2xl opacity-90 transition-all duration-500 transform hover:scale-105 hover:opacity-100"
+            className="w-full h-full object-cover rounded-2xl opacity-90 transition-transform duration-500 hover:scale-105 hover:opacity-100"
           />
-        </CardItem>
-      </CardContainer>
+        </PinContainer>
+      </div>
     </div>
   );
 };

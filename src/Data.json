@@ -15,9 +15,10 @@
     "React Native, Next.js, Node.js, Express, MongoDB, GraphQL, AWS"
   ],
   "Links": {
-      "Mobile": "https://www.linkedin.com/in/joshua-aideloje-6877a5193/recent-activity/all/",
-      "Web": "https://github.com/joshiri360",
-      "Github": "https://x.com/_devjosh"
+      "Mobile": "https://guillaumemaignan.github.io/sunsetMatches/",
+      "Web": "https://guillaumemaignan.github.io/sunsetMatches/",
+      "Github": "https://github.com/joshiri360",
+      "link": "/sunsetMatches.com"
     }
   },
   {
@@ -25,7 +26,7 @@
     "name": "Foodash",
     "description": "Foodash is a food delivery application that provides users with access to local restaurants and fast food services. It features a seamless ordering process, real-time delivery tracking, and personalized restaurant recommendations.",
     "image": "Images/image 3.png",
-    "Preview": "Images/Foodash.webp",
+    "Preview": "Images/Foodash.webp1.webp",
     "KeyFeatures": [
     "Real-time delivery tracking",
     "Personalized restaurant and meal recommendations",
@@ -38,15 +39,16 @@
   "Links": {
       "Mobile": "https://play.google.com/store/apps/details?id=com.foodashapp.user&hl=en",
       "Web": "https://play.google.com/store/apps/details?id=com.foodashapp.user&hl=en",
-      "Github": "https://x.com/_devjosh"
+      "Github": "https://github.com/joshiri360",
+       "link": "/Foodash.com"
     }
   },
   {
     "id": 3,
     "name": "MediAssis",
-    "description": "EcoTrack is a mobile and web application designed to help users monitor and reduce their carbon footprint. It provides personalized recommendations, tracks daily activities, and offers community challenges to encourage sustainable living.",
+    "description": "MediAssis provides users with tools to track their daily activities, receive personalized recommendations, and participate in community challenges.  By combining activity tracking with personalized insights and eco-friendly suggestions, MediAssis aims to make it easier for users to adopt more sustainable practices.",
     "image": "Images/image 4.png",
-    "Preview": "Images/Foodash.webp",
+    "Preview": "Images/Mediassist2.webp",
     "KeyFeatures": [
     "Personal carbon footprint calculator",
     "Daily activity tracking and insights",
@@ -57,9 +59,10 @@
     "React Native, Next.js, Node.js, Express, MongoDB, GraphQL, AWS"
   ], 
   "Links": {
-      "Mobile": "https://www.linkedin.com/in/joshua-aideloje-6877a5193/recent-activity/all/",
-      "web": "https://github.com/joshiri360",
-      "Github": "https://x.com/_devjosh"
+      "Mobile": "https://mediassist-app.vercel.app/",
+     "Web": "https://mediassist-app.vercel.app/",
+      "Github": "https://github.com/joshiri360  ",
+       "link": "/MediAssis.com"
     }
 
   },
@@ -81,7 +84,8 @@
   "Links": {
       "Mobile": "https://www.linkedin.com/in/joshua-aideloje-6877a5193/recent-activity/all/",
       "web": "https://github.com/joshiri360",
-      "Github": "https://x.com/_devjosh"
+      "Github": "https://x.com/_devjosh",
+       "link": "/Jumiaclone.com"
     }
   }
 ]
